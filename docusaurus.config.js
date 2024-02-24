@@ -81,7 +81,7 @@ const config = {
             position: 'left',
           },
           {
-            href: 'www.google.com',
+            href: 'https://www.google.com',
             label: 'Jira',
             position: 'right',
           },
