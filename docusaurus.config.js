@@ -68,6 +68,7 @@ const config = {
           src: 'img/propertEaseLogo-light.png',
         },
         items: [
+          /* 
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -75,6 +76,7 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          */
           {
             href: 'https://github.com/PI-PropertEase',
             label: 'GitHub',
@@ -96,38 +98,63 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Project Advisors',
             items: [
+              /*
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
+              */
+              {
+                label: 'Dr. Osvaldo Pacheco',
+                href: 'https://www.ua.pt/pt/p/10313442',
+              },
+              {
+                label: 'Dr. Rui Costa',
+                href: 'https://www.ua.pt/pt/degeit/rui_augusto_da_costa',
+              },
+              {
+                label: 'Daniel Ferreira',
+                href: 'https://www.ua.pt/pt/p/80653922',
+              },
             ],
           },
           {
-            title: 'Community',
+            title: 'Team Members',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Bárbara Galiza - 105937',
+                href: 'mailto:barbara.galiza@ua.pt',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Diana Miranda - 107457',
+                href: 'mailto:dianarrmiranda@ua.pt',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'João Dourado - 108636',
+                href: 'mailto:joao.dourado1@ua.pt',
               },
+              {
+                label: 'Miguel Figueiredo - 108287',
+                href: 'mailto:miguel.belchior@ua.pt',
+              },
+              {
+                label: 'Ricardo Quintaneiro - 110056',
+                href: 'mailto:ricardoquintaneiro@ua.pt',
+              },
+              
             ],
           },
           {
             title: 'More',
             items: [
+              /*
               {
                 label: 'Blog',
                 to: '/blog',
               },
+              */
               {
                 label: 'GitHub',
                 href: 'https://github.com/PI-PropertEase',
