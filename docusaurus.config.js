@@ -4,43 +4,43 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'PropertEase',
-  tagline: 'ease property management',
-  favicon: 'img/favicon.ico',
+  title: "PropertEase",
+  tagline: "ease property management",
+  favicon: "/img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://pi-propertease.github.io/',
+  url: "https://pi-propertease.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'PI-PropertEase', // Usually your GitHub org/user name.
-  projectName: 'PropertEase', // Usually your repo name.
+  organizationName: "PI-PropertEase", // Usually your GitHub org/user name.
+  projectName: "PropertEase", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
@@ -50,7 +50,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       }),
     ],
@@ -60,12 +60,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: 'PropertEase',
+        title: "PropertEase",
         logo: {
-          alt: 'PropertEase Logo',
-          src: 'img/propertEaseLogo-light.png',
+          alt: "PropertEase Logo",
+          src: "img/propertEaseLogo-light.png",
         },
         items: [
           /* 
@@ -78,27 +78,27 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},
           */
           {
-            href: 'https://github.com/PI-PropertEase',
-            label: 'GitHub',
-            position: 'left',
+            href: "https://github.com/PI-PropertEase",
+            label: "GitHub",
+            position: "left",
           },
           {
-            href: 'https://www.google.com',
-            label: 'Jira',
-            position: 'right',
+            href: "https://www.google.com",
+            label: "Jira",
+            position: "right",
           },
           {
-            href: 'https://drive.google.com/drive/folders/1FdH44A1MZvOJqbigQ2kSi4ZrfMuVYrrX?usp=drive_link',
-            label: 'Google Drive',
-            position: 'right',
+            href: "https://drive.google.com/drive/folders/1FdH44A1MZvOJqbigQ2kSi4ZrfMuVYrrX?usp=drive_link",
+            label: "Google Drive",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Project Advisors',
+            title: "Project Advisors",
             items: [
               /*
               {
@@ -107,47 +107,46 @@ const config = {
               },
               */
               {
-                label: 'Dr. Osvaldo Pacheco',
-                href: 'https://www.ua.pt/pt/p/10313442',
+                label: "Dr. Osvaldo Pacheco",
+                href: "https://www.ua.pt/pt/p/10313442",
               },
               {
-                label: 'Dr. Rui Costa',
-                href: 'https://www.ua.pt/pt/degeit/rui_augusto_da_costa',
+                label: "Dr. Rui Costa",
+                href: "https://www.ua.pt/pt/degeit/rui_augusto_da_costa",
               },
               {
-                label: 'Daniel Ferreira',
-                href: 'https://www.ua.pt/pt/p/80653922',
+                label: "Daniel Ferreira",
+                href: "https://www.ua.pt/pt/p/80653922",
               },
             ],
           },
           {
-            title: 'Team Members',
+            title: "Team Members",
             items: [
               {
-                label: 'Bárbara Galiza - 105937',
-                href: 'mailto:barbara.galiza@ua.pt',
+                label: "Bárbara Galiza - 105937",
+                href: "mailto:barbara.galiza@ua.pt",
               },
               {
-                label: 'Diana Miranda - 107457',
-                href: 'mailto:dianarrmiranda@ua.pt',
+                label: "Diana Miranda - 107457",
+                href: "mailto:dianarrmiranda@ua.pt",
               },
               {
-                label: 'João Dourado - 108636',
-                href: 'mailto:joao.dourado1@ua.pt',
+                label: "João Dourado - 108636",
+                href: "mailto:joao.dourado1@ua.pt",
               },
               {
-                label: 'Miguel Figueiredo - 108287',
-                href: 'mailto:miguel.belchior@ua.pt',
+                label: "Miguel Figueiredo - 108287",
+                href: "mailto:miguel.belchior@ua.pt",
               },
               {
-                label: 'Ricardo Quintaneiro - 110056',
-                href: 'mailto:ricardoquintaneiro@ua.pt',
+                label: "Ricardo Quintaneiro - 110056",
+                href: "mailto:ricardoquintaneiro@ua.pt",
               },
-              
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               /*
               {
@@ -156,8 +155,8 @@ const config = {
               },
               */
               {
-                label: 'GitHub',
-                href: 'https://github.com/PI-PropertEase',
+                label: "GitHub",
+                href: "https://github.com/PI-PropertEase",
               },
             ],
           },
