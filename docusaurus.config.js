@@ -83,7 +83,7 @@ const config = {
             position: "left",
           },
           {
-            href: "https://www.google.com",
+            href: "https://propertease.atlassian.net/jira/software/projects/SCRUM/boards/1",
             label: "Jira",
             position: "right",
           },
