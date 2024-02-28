@@ -44,11 +44,6 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -68,15 +63,12 @@ const config = {
           src: "img/propertEaseLogo-light.png",
         },
         items: [
-          /* 
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'projectSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Project Info',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          */
           {
             href: "https://github.com/PI-PropertEase",
             label: "GitHub",
@@ -100,12 +92,6 @@ const config = {
           {
             title: "Project Advisors",
             items: [
-              /*
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-              */
               {
                 label: "Dr. Osvaldo Pacheco",
                 href: "https://www.ua.pt/pt/p/10313442",
@@ -148,12 +134,6 @@ const config = {
           {
             title: "More",
             items: [
-              /*
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              */
               {
                 label: "GitHub",
                 href: "https://github.com/PI-PropertEase",
