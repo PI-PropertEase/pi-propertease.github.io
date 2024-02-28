@@ -26,6 +26,8 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-npm run deploy
+```
+$ npm run deploy
+```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
