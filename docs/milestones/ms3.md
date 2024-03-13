@@ -8,4 +8,4 @@ Development of a **functional prototype**.
 
 ## Future Work
 
-Currently working on **[milestone 2](ms2)**.
+Currently working on **this milestone**.

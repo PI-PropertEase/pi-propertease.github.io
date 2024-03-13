@@ -1,0 +1,60 @@
+---
+sidebar_position: 2
+---
+
+# MS2 - Elaboration Phase
+
+Establish the baseline of the **system's architecture and requirements** and provide a stable basis for the bulk of the development effort in the next phase.
+- [Presentation](https://drive.google.com/file/d/1_j8t8hRMqFecMj9ketOYNw3Qeg5u2s8E/view?usp=drive_link)
+
+### Architecture
+<div class="container" style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+  <div style={{maxWidth: '50%'}}> 
+    #### Microservices Pattern
+    - **Display service** - Provides the user interface and handles user interaction;
+    - **Reverse Proxy** - Redirects user requests to the appropriate microservice. Also provides load balancing to improve scalability and improves security because no service is directly exposed to the end-user;
+    - **Calendar service** - Responsible for authentication and authorization aspects;
+    - **User service** - Responsible for authentication and authorization aspects;
+    - **Property service** - Stores and provides all information related to a property;
+    - **Website Wrapper** - Module that encapsulates each supported property listing website. Generates events regarding reservations but also handles messages produced in the bussiness layer by propagating changes to those websites;
+    - **Message Queue** - Handles asynchronous and bidirectional communication between business and backoffice layer;
+    - **Analytics Service** - From public housing market data does analysis on property prices and generates suggestion to property categories .
+  </div>
+  <div> 
+    <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihapkr19smettKhsFhOAWA_LWXRlnzqhr0WaxFgd2M_JYlkwIas1AJqyEOqGgto2Hbpi4B0iQtjaEa9qB4iEfBi1MRuQ=w1920-h967" alt="Alt text"></img>
+  </div>
+</div>
+
+
+
+### Mockups
+- Dashboard
+![Dashboard](../../static/img/mockups/Dashboard%20Changes.png)
+- Calendar
+![Calendar](../../static/img/mockups/Calendar.png)
+- Property Details
+![Property Details](../../static/img/mockups/Property%20Details.png)
+- Property Details - Change Price
+![Property Details - Change Price](../../static/img/mockups/Change%20data.png)
+- Property Details - Scrolled Down
+![Property Details - Scrolled Down](../../static/img/mockups/Property%20Details%20Scrolled%20Down.png)
+- Property List
+![Property List](../../static/img/mockups/Properties%20List.png)
+- Chat
+![Chat](../../static/img/mockups/Chat.png)
+- Integrations
+![Integrations](../../static/img/mockups/Integrations.png)
+- Home
+![Home](../../static/img/mockups/Home.png)
+- Sign In
+![Sign In](../../static/img/mockups/Sign%20In.png)
+- Sign Up
+![Sign Up](../../static/img/mockups/Sign%20Up.png)
+- Statistics
+![Statistics](../../static/img/mockups/Statistics.png)
+- Admin - Connected Services
+![Admin - Connected Services](../../static/img/mockups/ADMIN%20-%20Integrations.png)
+- Admin - List of Users
+![Admin - List of Users](../../static/img/mockups/ADMIN%20-%20List%20of%20users.png)
+- Admin - Property List Page
+![Admin - Property List Page](../../static/img/mockups/ADMIN%20-%20Alice%20Properties%20List.png)
