@@ -13,7 +13,7 @@ Establish the baseline of the **system's architecture and requirements** and pro
     #### Microservices Pattern
     - **Display service** - Provides the user interface and handles user interaction;
     - **Reverse Proxy** - Redirects user requests to the appropriate microservice. Also provides load balancing to improve scalability and improves security because no service is directly exposed to the end-user;
-    - **Calendar service** - Responsible for authentication and authorization aspects;
+    - **Calendar service** - Responsible for the calendar synchronization between different listing services;
     - **User service** - Responsible for authentication and authorization aspects;
     - **Property service** - Stores and provides all information related to a property;
     - **Website Wrapper** - Module that encapsulates each supported property listing website. Generates events regarding reservations but also handles messages produced in the bussiness layer by propagating changes to those websites;
@@ -21,11 +21,24 @@ Establish the baseline of the **system's architecture and requirements** and pro
     - **Analytics Service** - From public housing market data does analysis on property prices and generates suggestion to property categories .
   </div>
   <div> 
-    <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihapkr19smettKhsFhOAWA_LWXRlnzqhr0WaxFgd2M_JYlkwIas1AJqyEOqGgto2Hbpi4B0iQtjaEa9qB4iEfBi1MRuQ=w1920-h967" alt="Alt text"></img>
+    <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihapkr19smettKhsFhOAWA_LWXRlnzqhr0WaxFgd2M_JYlkwIas1AJqyEOqGgto2Hbpi4B0iQtjaEa9qB4iEfBi1MRuQ=w1920-h967" alt="Architecture diagram"></img>
   </div>
 </div>
 
 
+### Use Cases
+
+#### Diagram
+![Use Cases](../../static/img/diagram/usecase.jpg)
+
+#### Flowcharts
+* UC: View synchronized properties calendar
+
+![Calendar UC flowchart](../../static/img/diagram/calendar_uc_flux.png)
+
+* UC: Set price for the chosen listing services 
+
+![Price setting UC flowchart](../../static/img/diagram/set_price_flux.png)
 
 ### Mockups
 - Dashboard
