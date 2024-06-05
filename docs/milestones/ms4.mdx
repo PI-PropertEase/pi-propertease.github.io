@@ -8,6 +8,9 @@ import ReactPlayer from "react-player";
 
 **All functionality has been developed!**
 
+- [Presentation](https://uapt33090-my.sharepoint.com/:p:/g/personal/miguel_belchior_ua_pt/EWvL2uKEj5hLm-SY420FChMBGfY67RFSYCMSwQKsmG3m7A?e=kb3Iek)
+- [Final Report](../../static/Report_G6_PropertEase.pdf)
+
 ## Promotional Media
 
 ### Promotional Video
@@ -23,4 +26,67 @@ import ReactPlayer from "react-player";
 
 ![Poster](../../static/img/poster.svg)
 
+<hr />
+
 ## Usability Tests
+
+<div
+  class="container"
+  style={{
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  }}
+>
+  <div style={{  }}>
+    #### Most Important feedback: 
+    - Display in which services a property is listed; 
+    - Property listing page has too much detail and is not clear where to find respective reservations; 
+    - Displayed past reservations aren't relevant in reservation list shouldn't be displayed unless the user decides so;
+
+    **Number of testers: 16** <br />
+    **Average SUS Score: 78.75%**
+
+  </div>
+  <div style={{ maxWidth: '40%' }}>
+    ![New Architecture diagram](../../static/img/usabilityTest.png)
+  </div>
+</div>
+
+### Usability tests changes
+
+- Properties List
+  ![PropertiesList](../../static/img/usabilityTestChanges/propertiesList.png)
+
+- Property Details
+  ![PropertyDetails](../../static/img/usabilityTestChanges/propertyDetails.png)
+
+- Channel Manager
+  ![ChannelManager](../../static/img/usabilityTestChanges/channelManager.png)
+
+- Reservations List
+  ![Reservations](../../static/img/usabilityTestChanges/reservations.png)
+
+<hr />
+
+## Price Recommendation Algorithm
+
+![PriceAlgorithm](../../static/img/priceAlgorithm.png)
+
+- **Property Features ML Model**
+
+  - Random Forest Regression
+  - Nr. of: guests, beds, bedrooms, bathrooms, amenities, latitude and longitude
+  - Recommend prices based on median property
+  - Training data from InsideAirbnb, Lisbon, 76716 entries, train/test split: 75-25
+
+- **Google Trends Analysis**
+
+  - Obtain search values for location
+  - Calculate % increase/decrease
+  - Reflect it on prices logarithmically
+  - Protected against “bad” trends
+
+- **Internal Price Variation**
+  - Detect internal price variations
+  - “Backup” for Google Trends
